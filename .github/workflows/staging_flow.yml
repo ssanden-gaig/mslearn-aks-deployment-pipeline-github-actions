@@ -65,6 +65,6 @@ jobs:
           --wait \
           --namespace staging \
           contoso-website \
-          ./kubernetes/contoso-website \
+          ./contoso-website \
           --set image.repository=${{ secrets.ACR_NAME }} \
           --set dns.name=${{ secrets.CLUSTER_DNS_NAME }}
